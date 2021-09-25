@@ -6,11 +6,11 @@
 <form action="sender.php" method="post" enctype="multipart/form-data">
     <div>
         <p>Логин:</p>
-        <input type ="text" name="login">
+        <input type ="text" size="15" maxlength="15" name="login">
     </div>
     <div>
         <p>Пароль:</p>
-        <input type ="text" name="password">
+        <input type="password" size="15" maxlength="15" name="password">
     </div>
     <div>
         <p>Имя:</p>

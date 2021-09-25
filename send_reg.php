@@ -21,7 +21,7 @@ if (isset ($_POST['name']) && isset($_POST['email']) && isset($_POST['password']
     $phone = htmlentities($_POST['phone']);
     $email = htmlentities($_POST['email']);
 
-    if (!empty($name) && !empty($email)) {
+    if (!empty($name) && !empty($email) && !empty($password)) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $sql = mysqli_query($mysqli, "INSERT INTO `users` (`login`,`password`,`first_name`,`last_name`,`phone`, `email`) VALUES('$login', '$password', '$first_name', '$last_name', '$phone', '$email')");
             if($sql)
